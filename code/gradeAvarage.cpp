@@ -9,7 +9,12 @@ int main(){
   cin >> grade1 >> grade2 >> grade3;
 
   double average = (grade1 + grade2 + grade3) / 3;
-  cout << "your avarage grade: " << average;
+
+  cout << "------------------------------------------" << endl;
+  cout << endl;
   
+  cout << "your avarage grade: " << average << endl;
+  cout << endl;
+  cout << "------------------------------------------" << endl;
   return 0;
 }

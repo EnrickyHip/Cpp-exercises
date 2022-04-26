@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string.h>
 #include <math.h>
+#include <iomanip>
 using namespace std;
 
 int getDelta(double a, double b, double c){
@@ -28,10 +29,13 @@ int main(){
     if(!roots) cout << "There is no real roots";
     else {
         double sum = xI + xII;
-        cout << "xI: " << xI << endl;
-        cout <<  "xII: " << xII << endl;
-        cout << "roots sum: " << sum << endl;
-    }
 
+        cout << "------------------------------------------" << endl;
+        cout << setw(11) << "xI: " << xI << endl;
+        cout << setw(11) << "xII: " << xII << endl;
+        cout << setw(11) << "roots sum: " << sum << endl;
+        cout << "------------------------------------------" << endl;
+    }
+    
     return 0;
 }

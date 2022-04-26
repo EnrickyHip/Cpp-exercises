@@ -23,7 +23,11 @@ int main(){
 
   int sum = getCaracsSum(num);
 
-  cout << "sum of the digits: " << sum;
+  cout << "------------------------------------------" << endl;
+  cout << endl;
+  cout << "sum of the digits: " << sum << endl;;
+  cout << endl;
+  cout << "------------------------------------------" << endl;
 
   return 0;
 }

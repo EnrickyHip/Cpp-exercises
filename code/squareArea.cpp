@@ -10,7 +10,12 @@ int main(){
   cin >> side;
 
   double area = pow(side, 2);
-  cout << "the area of the square is: " << area;
-  
+
+  cout << "------------------------------------------" << endl;
+  cout << endl;
+  cout << "the area of the square is: " << area << endl;
+  cout << endl;
+  cout << "------------------------------------------" << endl;
+
   return 0;
 }

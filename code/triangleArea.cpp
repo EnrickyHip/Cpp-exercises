@@ -11,7 +11,12 @@ int main(){
   cin >> base >> height;
 
   double area = (base * height) / 2;
-  cout << area;
+
+  cout << "------------------------------------------" << endl;
+  cout << endl;
+  cout << "the area of the triangle is: " << area << endl;
+  cout << endl;
+  cout << "------------------------------------------" << endl;
   
   return 0;
 }
