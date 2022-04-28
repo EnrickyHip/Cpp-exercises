@@ -8,7 +8,7 @@ int main(){
     cout << "Digit two numbers: ";
     cin >> num1 >> num2;
 
-    double sum = num1 + num2;
+    const double sum = num1 + num2;
 
     cout << "------------------------------------------" << endl;
     cout << endl;

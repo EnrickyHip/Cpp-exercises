@@ -8,13 +8,15 @@ int main(){
   cout << "digit three grades: ";
   cin >> grade1 >> grade2 >> grade3;
 
-  double average = (grade1 + grade2 + grade3) / 3;
+  const double average = (grade1 + grade2 + grade3) / 3;
+
+  cout.precision(2);
 
   cout << "------------------------------------------" << endl;
   cout << endl;
-  
   cout << "your avarage grade: " << average << endl;
   cout << endl;
   cout << "------------------------------------------" << endl;
+  
   return 0;
 }

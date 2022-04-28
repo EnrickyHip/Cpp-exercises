@@ -10,7 +10,7 @@ int main(){
   cout << "digit the base and height of the triangle: ";
   cin >> base >> height;
 
-  double area = (base * height) / 2;
+  const double area = (base * height) / 2;
 
   cout << "------------------------------------------" << endl;
   cout << endl;

@@ -11,6 +11,7 @@ int getDelta(double a, double b, double c){
 bool getRoots(double a, double b, double c, double& xI, double& xII){
     double delta = getDelta(a, b, c);
 
+    if(a == 0) return false;
     if(delta < 0) return false;        
     
     xI = (-b + sqrt(delta)) / (2*a);
@@ -24,11 +25,14 @@ int main(){
     cout << "digit the values of a, b and c: ";
     cin >> a >> b >> c;
 
-    bool roots = getRoots(a, b, c, xI, xII);
+    const bool roots = getRoots(a, b, c, xI, xII);
 
-    if(!roots) cout << "There is no real roots";
+    if(!roots) {
+        if(a == 0) cout << "not a quadratic equation";
+        else cout << "There is no real roots";
+    }
     else {
-        double sum = xI + xII;
+        const double sum = xI + xII;
 
         cout << "------------------------------------------" << endl;
         cout << setw(11) << "xI: " << xI << endl;

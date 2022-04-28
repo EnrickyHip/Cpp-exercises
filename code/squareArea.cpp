@@ -9,7 +9,7 @@ int main(){
   cout << "digit the value of the sides: ";
   cin >> side;
 
-  double area = pow(side, 2);
+  const double area = pow(side, 2);
 
   cout << "------------------------------------------" << endl;
   cout << endl;

@@ -9,8 +9,8 @@ int sortArray(int array[], int elementsInArray){
 
 int main(){
   int array[] = {4, 56, 6, 7, -65, 23, 413, -2, 5, 7};
+  const int elementsInArray = sizeof(array) / sizeof(array[0]);
 
-  int elementsInArray = sizeof(array) / sizeof(array[0]);
   //sizeof(array) get to size of the array in bytes (4 bytes per element)
   //sizeof(array[0] get the size of each element
   //elementInArray is the total elements in array.

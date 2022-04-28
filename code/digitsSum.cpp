@@ -4,7 +4,7 @@ using namespace std;
 
 int getCaracsSum(int num){
   long long int rest;
-  string numString = to_string(num);
+  const string numString = to_string(num);
   int sum = 0;
 
   for (int i = 0; i < numString.length(); i++){
@@ -21,7 +21,7 @@ int main(){
   cout << "digit a number: ";
   cin >> num;
 
-  int sum = getCaracsSum(num);
+  const int sum = getCaracsSum(num);
 
   cout << "------------------------------------------" << endl;
   cout << endl;
