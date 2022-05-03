@@ -2,12 +2,12 @@
 #include <string.h>
 using namespace std;
 
-int getCaracsSum(int num){
+int get_caracs_sum(int num){
   long long int rest;
-  const string numString = to_string(num);
+  const string num_string = to_string(num);
   int sum = 0;
 
-  for (int i = 0; i < numString.length(); i++){
+  for (int i = 0; i < num_string.length(); i++){
     rest = num % 10;
     sum = sum + rest;
     num = num / 10;
@@ -21,7 +21,7 @@ int main(){
   cout << "digit a number: ";
   cin >> num;
 
-  const int sum = getCaracsSum(num);
+  const int sum = get_caracs_sum(num);
 
   cout << "------------------------------------------" << endl;
   cout << endl;

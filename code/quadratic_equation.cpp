@@ -4,12 +4,12 @@
 #include <iomanip>
 using namespace std;
 
-int getDelta(double a, double b, double c){
+int get_delta(double a, double b, double c){
     return pow(b, 2) - (4 * a * c);
 }
 
-bool getRoots(double a, double b, double c, double& xI, double& xII){
-    double delta = getDelta(a, b, c);
+bool get_roots(double a, double b, double c, double& xI, double& xII){
+    double delta = get_delta(a, b, c);
 
     if(a == 0) return false;
     if(delta < 0) return false;        
@@ -25,7 +25,7 @@ int main(){
     cout << "digit the values of a, b and c: ";
     cin >> a >> b >> c;
 
-    const bool roots = getRoots(a, b, c, xI, xII);
+    const bool roots = get_roots(a, b, c, xI, xII);
 
     if(!roots) {
         if(a == 0) cout << "not a quadratic equation";
