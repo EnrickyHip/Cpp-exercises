@@ -4,7 +4,7 @@ using namespace std;
 
 int get_caracs_sum(int num){
   long long int rest;
-  const string num_string = to_string(num);
+  const string num_string = to_string(num); //converts to string
   int sum = 0;
 
   for (int i = 0; i < num_string.length(); i++){

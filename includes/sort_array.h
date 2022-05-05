@@ -4,8 +4,8 @@
 #include <iostream>
 using namespace std;
 
-int sort_array(double array[], int elements_in_array){
-  sort(array, array + elements_in_array);
+int sort_array(double array[], int array_size){
+  sort(array, array + array_size);
   return 0;
 }
 
